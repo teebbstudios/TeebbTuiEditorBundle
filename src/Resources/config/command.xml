@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd"
+>
+    <services>
+        <service id="tui_editor.command.installer" class="Teebb\TuiEditorBundle\Command\TuiEditorDownloadCommand">
+            <argument type="service" id="tui_editor.installer" />
+            <tag name="console.command" command="tuieditor:install" />
+        </service>
+    </services>
+</container>

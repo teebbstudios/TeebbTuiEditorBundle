@@ -1,0 +1,38 @@
+{
+    "name": "teebbstudios/tuieditor-bundle",
+    "description": "tui.editor bundle for symfony",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "keywords": [
+        "tui.editor",
+        "markdown"
+    ],
+    "authors": [
+        {
+            "name": "Quan Weiwei",
+            "email": "crazypro@live.cn"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "ext-zip": "*",
+        "symfony/asset": "^3.4 || ^4.0",
+        "symfony/config": "^3.4 || ^4.0",
+        "symfony/dependency-injection": "^3.4 || ^4.0",
+        "symfony/expression-language": "^3.4 || ^4.0",
+        "symfony/form": "^3.4 || ^4.0",
+        "symfony/framework-bundle": "^3.4 || ^4.0",
+        "symfony/http-foundation": "^3.4 || ^4.0",
+        "symfony/http-kernel": "^3.4 || ^4.0",
+        "symfony/options-resolver": "^3.4 || ^4.0",
+        "symfony/property-access": "^3.4 || ^4.0",
+        "symfony/routing": "^3.4 || ^4.0",
+        "symfony/twig-bundle": "^3.4 || ^4.0",
+        "twig/twig": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Teebb\\TuiEditorBundle\\": "src/"
+        }
+    }
+}

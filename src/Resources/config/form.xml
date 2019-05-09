@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd"
+>
+    <services>
+        <service id="teebb_tui_editor.form.type" class="Teebb\TuiEditorBundle\Form\Type\TuiEditorType">
+            <argument type="service" id="teebb_tui_editor.configuration" />
+            <argument type="expression">container.hasParameter('locale') ? parameter('locale') : null</argument>
+            <tag name="form.type" />
+        </service>
+    </services>
+</container>
