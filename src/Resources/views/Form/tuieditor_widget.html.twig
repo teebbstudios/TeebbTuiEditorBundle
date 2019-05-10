@@ -12,20 +12,19 @@
 
 {% endblock %}
 
-{%- block _tuieditor_javascript -%}
+{% block _tuieditor_javascript %}
 
     {{ tuieditor_editor_widget('editor_'~id, config, value) }}
-
     {{ block('_tuieditor_events_hooks') }}
 
-{%- endblock -%}
+{% endblock %}
 
-{%- block _tuieditor_events_hooks -%}
+{% block _tuieditor_events_hooks %}
 
     <script>
-        editor.on("change",function(){
-            document.querySelector('textarea#{{ id }}').innerHTML = {%- if config.to_html is defined and config.to_html == true -%}editor.getHtml(){%- else -%}editor.getMarkdown(){%- endif -%};
+        editor_{{ id }}.on("change",function(){
+            document.querySelector('textarea#{{ id }}').innerHTML = {% if config.to_html is defined and config.to_html == true %}editor.getHtml(){% else %}editor.getMarkdown(){% endif %};
         });
     </script>
 
-{%- endblock -%}
+{% endblock %}

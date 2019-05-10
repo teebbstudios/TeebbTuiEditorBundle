@@ -168,7 +168,7 @@ final class TuiEditorRenderer implements TuiEditorRendererInterface
         $viewerJsScript = sprintf(
             '<script class="code-js">' .
             'var content = [%s].join("\n"); ' .
-            'var viewer = new tui.Editor({' .
+            'var viewer_%s = new tui.Editor({' .
             'el: document.querySelector("#%s"),' .
             'height: "%s",' .
             'initialValue: content,' .
@@ -176,6 +176,7 @@ final class TuiEditorRenderer implements TuiEditorRendererInterface
             '});' .
             '</script>',
             $this->fixContentToJs($content),
+            $id,
             $id,
             "300px",
             $this->fixArrayToJs($extensions, "scrollSync")
@@ -301,7 +302,7 @@ final class TuiEditorRenderer implements TuiEditorRendererInterface
         $editorJsScript = sprintf(
             '<script class="code-js">' .
             'var content = [%s].join("\n");' .
-            'var editor = new tui.Editor({' .
+            'var editor_%s = new tui.Editor({' .
             'el: document.querySelector("#%s"),' .
             'initialEditType: "%s",' .
             'previewStyle: "%s",' .
@@ -312,6 +313,7 @@ final class TuiEditorRenderer implements TuiEditorRendererInterface
             '});' .
             '</script>',
             $this->fixContentToJs($content),
+            $id,
             $id,
             array_key_exists('initialEditType', $config) ? $config['initialEditType'] : "markdown",
             array_key_exists('previewStyle', $config) ? $config['previewStyle'] : "vertical",
