@@ -22,5 +22,4 @@ interface TuiEditorRendererInterface
 
     public function renderDependencies(array $dependencies = null): string;
 
-
 }

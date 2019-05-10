@@ -34,7 +34,6 @@ final class Configuration implements ConfigurationInterface
                 ->append($this->createExtensions())
                 ->append($this->createDependencies())
                 ->append($this->createConfigsNode())
-                ->append($this->createToolbarsNode())
             ->end();
 
         return $treeBuilder;
@@ -162,21 +161,6 @@ final class Configuration implements ConfigurationInterface
                 ->normalizeKeys(false)
                 ->useAttributeAsKey('name')
                 ->variablePrototype()->end()
-            ->end();
-    }
-
-
-    private function createToolbarsNode(): ArrayNodeDefinition
-    {
-        return $this->createNode('toolbars')
-            ->addDefaultsIfNotSet()
-            ->children()
-                ->arrayNode('configs')
-                    ->useAttributeAsKey('name')
-                    ->arrayPrototype()
-                        ->variablePrototype()->end()
-                    ->end()
-                ->end()
             ->end();
     }
 
