@@ -72,11 +72,6 @@ final class TuiEditorConfiguration implements TuiEditorConfigurationInterface
      */
     private $dependencies;
 
-    /**
-     * @var array
-     */
-    private $toolbars;
-
     public function __construct(array $config)
     {
         if ($config['enable']) {
@@ -95,7 +90,6 @@ final class TuiEditorConfiguration implements TuiEditorConfigurationInterface
         $this->configs = $config['configs'];
         $this->extensions = $config['extensions'];
         $this->dependencies = $config['dependencies'];
-        $this->toolbars = $config['toolbars'];
 
     }
 
@@ -181,11 +175,6 @@ final class TuiEditorConfiguration implements TuiEditorConfigurationInterface
     public function getDependencies(): array
     {
         return $this->dependencies;
-    }
-
-    public function getToolbars(): array
-    {
-        return $this->toolbars;
     }
 
     public function getConfig(string $name): array

@@ -51,7 +51,6 @@ final class TuiEditorType extends AbstractType
         $builder->setAttribute('config', $this->resolveConfig($options));
         $builder->setAttribute('config_name', $options['config_name']);
         $builder->setAttribute('extensions', $options['extensions']);
-        $builder->setAttribute('toolbars', $options['toolbars']);
         $builder->setAttribute('dependencies', $options['dependencies']);
     }
 
@@ -87,7 +86,6 @@ final class TuiEditorType extends AbstractType
         $view->vars['jquery_path'] = $config->getAttribute('jquery_path');
         $view->vars['config'] = $config->getAttribute('config');
         $view->vars['extensions'] = $config->getAttribute('extensions');
-        $view->vars['toolbars'] = $config->getAttribute('toolbars');
         $view->vars['dependencies'] = $config->getAttribute('dependencies');
         $view->vars['config_name'] = $config->getAttribute('config_name');
 
@@ -109,7 +107,6 @@ final class TuiEditorType extends AbstractType
                 'config_name' => $this->configuration->getDefaultConfig(),
                 'config' => $this->configuration->getConfigs(),
                 'extensions' => $this->configuration->getExtensions(),
-                'toolbars' => $this->configuration->getToolbars(),
                 'dependencies' => $this->configuration->getDependencies(),
             ])
             ->addAllowedTypes('enable', 'bool')

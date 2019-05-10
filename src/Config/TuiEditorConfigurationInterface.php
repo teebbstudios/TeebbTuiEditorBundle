@@ -34,8 +34,6 @@ interface TuiEditorConfigurationInterface
 
     public function getDependencies(): array;
 
-    public function getToolbars(): array;
-
     /**
      * @throws ConfigException
      */
