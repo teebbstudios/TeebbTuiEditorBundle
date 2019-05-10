@@ -134,6 +134,8 @@ final class TuiEditorRenderer implements TuiEditorRendererInterface
         }
         $extensions = $this->options['configs'][$this->options['default_config']]['exts'];
 
+        $toolbarItems = $this->options['toolbars']['configs'][$this->options['config']]['toolbarItems'];
+
         $viewerJsCode = sprintf('<script src="%s"></script>', $this->fixPath($viewerJsPath));
         $viewerCssCode = sprintf('<link rel="stylesheet" href="%s" />', $this->fixPath($this->options['editor_contents_css_path']));
 
@@ -171,12 +173,14 @@ final class TuiEditorRenderer implements TuiEditorRendererInterface
             'el: document.querySelector("#%s"),' .
             'height: "%s",' .
             'initialValue: "%s",' .
+            'toolbarItems: [%s]' .
             'exts: [%s]' .
             '});' .
             '</script>',
             $id,
             "300px",
             $content,
+            $this->fixArrayToJs($toolbarItems),
             $this->fixArrayToJs($extensions, "scrollSync")
         );
 
@@ -299,7 +303,7 @@ final class TuiEditorRenderer implements TuiEditorRendererInterface
 
         $editorJsScript = sprintf(
             '<script class="code-js">' .
-            'var content = [%s].join("\n");'.
+            'var content = [%s].join("\n");' .
             'var editor = new tui.Editor({' .
             'el: document.querySelector("#%s"),' .
             'initialEditType: "%s",' .
