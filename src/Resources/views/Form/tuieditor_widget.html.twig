@@ -23,7 +23,7 @@
 
     <script>
         editor_{{ id }}.on("change",function(){
-            document.querySelector('textarea#{{ id }}').innerHTML = {% if config.to_html is defined and config.to_html == true %}editor.getHtml(){% else %}editor.getMarkdown(){% endif %};
+            document.querySelector('textarea#{{ id }}').innerHTML = {% if config.to_html is defined and config.to_html == true %}editor_{{ id }}.getHtml(){% else %}editor_{{ id }}.getMarkdown(){% endif %};
         });
     </script>
 
