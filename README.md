@@ -1,6 +1,6 @@
 # TeebbTuiEditorBundle
 This bundle integration tui.editor for your symfony project. The code for this bundle was modified from [FOSCKEditorBundle](https://github.com/FriendsOfSymfony/FOSCKEditorBundle).
-Thanks FOSCKEditorBundle author:[Eric Geleon](geloen.eric@gmail.com) and [FriendsOfSymfony Community](https://github.com/FriendsOfSymfony/FOSCKEditorBundle/graphs/contributors) , your code is cool. Thanks MIT License.
+Thanks FOSCKEditorBundle author:[Eric Geleon](https://github.com/egeloen) and [FriendsOfSymfony Community](https://github.com/FriendsOfSymfony/FOSCKEditorBundle/graphs/contributors) , your code is cool. Thanks MIT License.
 
 Installation
 ============

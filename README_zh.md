@@ -1,6 +1,6 @@
 # TeebbTuiEditorBundle
 这个包集成Markdown编辑器tui.editor到您的symfony项目。 这个包的源代码是从[FOSCKEditorBundle](https://github.com/FriendsOfSymfony/FOSCKEditorBundle)修改而来.
-感谢 FOSCKEditorBundle 的作者:[Eric Geleon](geloen.eric@gmail.com) 和 [FriendsOfSymfony Community](https://github.com/FriendsOfSymfony/FOSCKEditorBundle/graphs/contributors) , 你们的代码很酷. 感谢 MIT 开源协议.
+感谢 FOSCKEditorBundle 的作者:[Eric Geleon](https://github.com/egeloen) 和 [FriendsOfSymfony Community](https://github.com/FriendsOfSymfony/FOSCKEditorBundle/graphs/contributors) , 你们的代码很酷. 感谢 MIT 开源协议.
 
 安装
 ============
