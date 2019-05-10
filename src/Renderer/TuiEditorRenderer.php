@@ -167,16 +167,17 @@ final class TuiEditorRenderer implements TuiEditorRendererInterface
 
         $viewerJsScript = sprintf(
             '<script class="code-js">' .
+            'var content = [%s].join("\n"); ' .
             'var viewer = new tui.Editor({' .
             'el: document.querySelector("#%s"),' .
             'height: "%s",' .
-            'initialValue: "%s",' .
+            'initialValue: content,' .
             'exts: [%s]' .
             '});' .
             '</script>',
+            $this->fixContentToJs($content),
             $id,
             "300px",
-            $content,
             $this->fixArrayToJs($extensions, "scrollSync")
         );
 
