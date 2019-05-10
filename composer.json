@@ -1,6 +1,6 @@
 {
     "name": "teebbstudios/tuieditor-bundle",
-    "description": "tui.editor bundle for symfony",
+    "description": "This bundle integration tui.editor for your Symfony project.",
     "type": "symfony-bundle",
     "license": "MIT",
     "keywords": [
