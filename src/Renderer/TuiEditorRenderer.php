@@ -302,7 +302,7 @@ final class TuiEditorRenderer implements TuiEditorRendererInterface
         $editorJsScript = sprintf(
             '<script class="code-js">' .
             'var content = [%s].join("\n");' .
-            'var editor_%s = new tui.Editor({' .
+            'var %s = new tui.Editor({' .
             'el: document.querySelector("#%s"),' .
             'initialEditType: "%s",' .
             'previewStyle: "%s",' .
