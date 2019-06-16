@@ -107,6 +107,15 @@ twig:
         - '@TeebbTuiEditor/Form/tuieditor_widget.html.twig'
 
 ```
+You can config tui.editor language. 
+```yaml
+#config/services.yaml
+
+parameters:
+    locale: 'zh_CN'                   # Change the locale
+
+```
+
 
 ### Step 5: Use the Bundle
 

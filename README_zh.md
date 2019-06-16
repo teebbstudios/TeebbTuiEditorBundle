@@ -103,6 +103,14 @@ twig:
         - '@TeebbTuiEditor/Form/tuieditor_widget.html.twig'
 
 ```
+您可以修改tui.editor的语言显示。
+```yaml
+#config/services.yaml
+
+parameters:
+    locale: 'zh_CN'                   # Change the locale
+
+```
 
 ### 第5步: 使用TeebbTuiEditorBundle
 
