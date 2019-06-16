@@ -5,7 +5,7 @@
 ![tui.editor](https://user-images.githubusercontent.com/1215767/34356204-4c03be8a-ea7f-11e7-9aa9-0d84f9e912ec.gif)
 
 
-安装
+安装和使用
 ============
 
 如果您的应用使用了Symfony Flex

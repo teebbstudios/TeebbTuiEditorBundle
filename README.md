@@ -1,10 +1,12 @@
 # TeebbTuiEditorBundle
+中文文档在这里：[中文文档](README_zh.md)
+
 This bundle integration tui.editor for your symfony project. The code for this bundle was modified from [FOSCKEditorBundle](https://github.com/FriendsOfSymfony/FOSCKEditorBundle).
 Thanks FOSCKEditorBundle author:[Eric Geleon](https://github.com/egeloen) and [FriendsOfSymfony Community](https://github.com/FriendsOfSymfony/FOSCKEditorBundle/graphs/contributors) , your code is cool. Thanks MIT License.
 
 ![tui.editor](https://user-images.githubusercontent.com/1215767/34356204-4c03be8a-ea7f-11e7-9aa9-0d84f9e912ec.gif)
 
-Installation
+Installation ＆ Usage
 ============
 
 Applications that use Symfony Flex
