@@ -101,11 +101,6 @@ teebb_tui_editor:
                 - mark
                 - table
 
-
-twig:
-    form_themes:
-        - '@TeebbTuiEditor/Form/tuieditor_widget.html.twig'
-
 ```
 You can config tui.editor language. 
 ```yaml

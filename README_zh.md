@@ -97,11 +97,6 @@ teebb_tui_editor:
                 - mark
                 - table
 
-
-twig:
-    form_themes:
-        - '@TeebbTuiEditor/Form/tuieditor_widget.html.twig'
-
 ```
 您可以修改tui.editor的语言显示。
 ```yaml
